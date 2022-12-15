@@ -1,0 +1,16 @@
+<suite name="testsuite" verbose="1">
+
+    <listeners>
+        <listener class-name="com.nopcommerce.demo.customlisteners.CustomListeners"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="MyAccount Test">
+        <classes>
+            <class name="com.nopcommerce.demo.testsuite.HomePageTest"></class>
+            <class name="com.nopcommerce.demo.testsuite.ComputerTest"></class>
+            <class name="com.nopcommerce.demo.testsuite.ComputerTest1"></class>
+            <class name="com.nopcommerce.demo.testsuite.ElectronicTest"></class>
+        </classes>
+    </test>
+</suite>
